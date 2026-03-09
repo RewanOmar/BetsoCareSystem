@@ -4,7 +4,6 @@ using BetsoCare.Infrastructure.SeedData;
 using BetsoCare.Repository;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace BetsoCareSystem
 {
     public class Program
@@ -13,9 +12,9 @@ namespace BetsoCareSystem
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
+            // Add services
             builder.Services.AddControllers();
+
             builder.Services.AddScoped<IArticleRepository, ArticleRepository>();
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -24,8 +23,21 @@ namespace BetsoCareSystem
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy
+                        .AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
             var app = builder.Build();
 
+            // Database migrate + seed
             using (var scope = app.Services.CreateScope())
             {
                 var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
@@ -40,6 +52,9 @@ namespace BetsoCareSystem
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            // гег
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 

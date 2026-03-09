@@ -19,9 +19,14 @@ namespace BetsoCare.APIS.Controllers
         [HttpPost]
         public async Task<IActionResult> AddArticle([FromForm] CreateArticleWithImageDto dto)
         {
+            // Validation
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             string? imagePath = null;
 
-            if (dto.Image != null)
+            // Upload image if exists
+            if (dto.Image != null && dto.Image.Length > 0)
             {
                 var fileName = Guid.NewGuid() + Path.GetExtension(dto.Image.FileName);
 
@@ -44,11 +49,11 @@ namespace BetsoCare.APIS.Controllers
                 Title = dto.Title,
                 Summary = dto.Summary,
                 Content = dto.Content,
-                Source = dto.Source,
+                Source = dto.Source,   // optional
                 Category = dto.Category,
                 PublishDate = dto.PublishDate,
                 CreatedAt = DateTime.UtcNow,
-                ImageUrl = imagePath
+                ImageUrl = imagePath   // optional
             };
 
             await _repo.AddArticleAsync(article);
@@ -60,6 +65,9 @@ namespace BetsoCare.APIS.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateArticle(int id, [FromBody] Article article)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             article.Id = id;
 
             var result = await _repo.UpdateArticleAsync(article);
@@ -86,7 +94,7 @@ namespace BetsoCare.APIS.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllArticles()
         {
-            var articles = await _repo.GetAllAsync(1, 100);
+            var articles = await _repo.GetAllAsync();
             return Ok(articles);
         }
     }

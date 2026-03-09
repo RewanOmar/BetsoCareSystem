@@ -1,10 +1,12 @@
 ﻿using BetsoCare.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace BetsoCare.APIS.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("AllowAll")]
     public class ArticlesController : ControllerBase
     {
         private readonly IArticleRepository _repo;
@@ -15,9 +17,9 @@ namespace BetsoCare.APIS.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetArticles(int page = 1, int pageSize = 5)
+        public async Task<IActionResult> GetArticles()
         {
-            var articles = await _repo.GetAllAsync(page, pageSize);
+            var articles = await _repo.GetAllAsync();
             return Ok(articles);
         }
 
