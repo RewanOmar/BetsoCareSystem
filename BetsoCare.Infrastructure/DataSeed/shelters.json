@@ -1,0 +1,38 @@
+﻿[
+    {
+        "name": "New Qabouti Shelter 1",
+        "governorate": "Port Said",
+        "address": "New Qabouti Area – South District – Port Said",
+        "animalType": "Dogs",
+        "capacity": null,
+        "phone": null,
+        "workingHours": null,
+        "notes": "Official project for stray dogs care",
+        "lat": null,
+        "lng": null
+    },
+    {
+        "name": "New Qabouti Shelter 2",
+        "governorate": "Port Said",
+        "address": "New Qabouti Area – South District – Port Said",
+        "animalType": "Dogs",
+        "capacity": null,
+        "phone": null,
+        "workingHours": null,
+        "notes": "Second shelter in same area",
+        "lat": null,
+        "lng": null
+    },
+    {
+        "name": "Port Fouad Shelter",
+        "governorate": "Port Said",
+        "address": "Port Fouad City – Port Said",
+        "animalType": "Dogs",
+        "capacity": null,
+        "phone": null,
+        "workingHours": null,
+        "notes": "Under construction",
+        "lat": null,
+        "lng": null
+    }
+]
