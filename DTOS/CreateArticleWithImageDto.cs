@@ -22,4 +22,7 @@ public class CreateArticleWithImageDto
     public DateTime PublishDate { get; set; }
 
     public IFormFile? Image { get; set; } // optional
+    public string TitleEn { get; internal set; }
+    public string SummaryEn { get; internal set; }
+    public string ContentEn { get; internal set; }
 }
