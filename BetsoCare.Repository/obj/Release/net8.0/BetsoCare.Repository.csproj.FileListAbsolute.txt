@@ -1,0 +1,17 @@
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Repository.deps.json
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Repository.dll
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Repository.pdb
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Core.dll
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Infrastructure.dll
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Core.pdb
+D:\Graduation Project\BetsoCare.Repository\bin\Release\net8.0\BetsoCare.Infrastructure.pdb
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.csproj.AssemblyReference.cache
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.AssemblyInfoInputs.cache
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.AssemblyInfo.cs
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.csproj.CoreCompileInputs.cache
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCar.7F2D5A9D.Up2Date
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.dll
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\refint\BetsoCare.Repository.dll
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\BetsoCare.Repository.pdb
+D:\Graduation Project\BetsoCare.Repository\obj\Release\net8.0\ref\BetsoCare.Repository.dll

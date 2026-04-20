@@ -1,0 +1,6 @@
+@BetsoCare.API.NEW_HostAddress = http://localhost:5003
+
+GET {{BetsoCare.API.NEW_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

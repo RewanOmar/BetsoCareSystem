@@ -1,0 +1,12 @@
+D:\Graduation Project\BetsoCare.Core\bin\Debug\net8.0\BetsoCare.Core.deps.json
+D:\Graduation Project\BetsoCare.Core\bin\Debug\net8.0\BetsoCare.Core.dll
+D:\Graduation Project\BetsoCare.Core\bin\Debug\net8.0\BetsoCare.Core.pdb
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.csproj.AssemblyReference.cache
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.AssemblyInfoInputs.cache
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.AssemblyInfo.cs
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.csproj.CoreCompileInputs.cache
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.dll
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\refint\BetsoCare.Core.dll
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\BetsoCare.Core.pdb
+D:\Graduation Project\BetsoCare.Core\obj\Debug\net8.0\ref\BetsoCare.Core.dll
