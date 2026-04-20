@@ -3,9 +3,10 @@ WORKDIR /app
 
 COPY . .
 
+
 WORKDIR /app/BetsoCareSystem
 
-RUN dotnet restore BetsoCare.APIS.csproj
+
 RUN dotnet publish BetsoCare.APIS.csproj -c Release -o /app/out
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
