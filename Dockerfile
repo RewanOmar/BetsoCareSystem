@@ -4,9 +4,11 @@ WORKDIR /app
 COPY . .
 
 
-WORKDIR /app/BetsoCareSystem
+RUN ls -R
 
-RUN dotnet publish BetsoCare.APIS.csproj -c Release -o /app/out
+RUN find . -name "*.csproj"
+
+RUN dotnet publish ./BetsoCareSystem/BetsoCare.APIS.csproj -c Release -o /app/out
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
