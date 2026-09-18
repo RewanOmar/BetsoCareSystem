@@ -1,0 +1,6 @@
+@BetsoCareSystem_HostAddress = http://localhost:5020
+
+GET {{BetsoCareSystem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
